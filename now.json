@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "env": {
+    "AUTH_USERS": "@auth_users"
+  },
+  "build": {
+    "env": {
+      "BUILDING_FOR_NOW": "true"
+    }
+  },
+  "builds": [
+    {
+      "src": "packages/example-next/package.json",
+      "use": "@now/next"
+    },
+    {
+      "src": "packages/constructicons/package.json",
+      "use": "@now/static-build"
+    },
+    {
+      "src": "packages/constructicons/now-basic-auth.js",
+      "use": "@now/node",
+      "config": {
+        "includeFiles": ["packages/constructicons/public/**/*.js"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/example",
+      "status": 308,
+      "headers": { "Location": "/example/" }
+    },
+    {
+      "src": "/example/(.*)",
+      "dest": "/packages/example-next/$1"
+    },
+    {
+      "src": "/_next/",
+      "status": 308,
+      "headers": { "Location": "/example/_next/" }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/packages/constructicons/now-basic-auth.js"
+    }
+  ]
+}

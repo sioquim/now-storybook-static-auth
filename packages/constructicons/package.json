@@ -1,0 +1,40 @@
+{
+  "name": "@esglobalfe/constructicons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build": "build-storybook -c .storybook -o public",
+    "build-lib": "tsc && tsc --build tsconfig.esm.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "static-auth": "^1.0.0",
+    "cowsay-browser": "^1.1.8",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-info": "^5.3.13",
+    "@storybook/addon-knobs": "^5.3.12",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/react": "^5.3.13",
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^25.1.2",
+    "babel-loader": "^8.0.6",
+    "jest": "^25.1.0",
+    "react-docgen-typescript-loader": "^3.6.0",
+    "ts-jest": "^25.2.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5"
+  }
+}

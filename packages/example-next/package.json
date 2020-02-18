@@ -1,0 +1,27 @@
+{
+  "name": "@esglobalfe/example-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@esglobalfe/constructicons": "^1.0.0",
+    "date-fns": "^2.9.0",
+    "next": "^9.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "@types/react": "^16.9.19",
+    "jest": "^25.1.0",
+    "typescript": "^3.7.5"
+  }
+}
