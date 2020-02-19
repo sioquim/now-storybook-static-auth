@@ -1,5 +1,5 @@
 {
-  "name": "@esglobalfe/constructicons",
+  "name": "@monorepo-demo/shared-components",
   "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build": "build-storybook -c .storybook -o public",
+    "now-build": "build-storybook -c .storybook -o public && node ./now-basic-auth.js",
     "build-lib": "tsc && tsc --build tsconfig.esm.json"
   },
   "keywords": [],

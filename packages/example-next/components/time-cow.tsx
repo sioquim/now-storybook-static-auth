@@ -1,4 +1,4 @@
-import { Cowsay } from "@esglobalfe/constructicons";
+import { Cowsay } from "@monorepo-demo/shared-components";
 import { format } from "date-fns";
 
 const TimeCow = () => (

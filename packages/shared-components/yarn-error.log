@@ -28,7 +28,7 @@ Trace:
 
 npm manifest: 
   {
-    "name": "@esglobalfe/constructicons",
+    "name": "@monorepo-demo/shared-components",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",

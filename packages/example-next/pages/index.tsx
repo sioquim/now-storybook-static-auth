@@ -1,4 +1,4 @@
-import { Cowsay } from "@esglobalfe/constructicons";
+import { Cowsay } from "@monorepo-demo/shared-components";
 import Head from "next/head";
 import Nav from "../components/nav";
 

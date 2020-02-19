@@ -1,5 +1,5 @@
 {
-  "name": "@esglobalfe/example-next",
+  "name": "@monorepo-demo/example-next",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@esglobalfe/constructicons": "^1.0.0",
+    "@monorepo-demo/shared-components": "^1.0.0",
     "date-fns": "^2.9.0",
     "next": "^9.2.1",
     "react": "^16.12.0",
